@@ -3,9 +3,9 @@ body {
 	background-image: url(../styles/background.jpg);
 	background-repeat: no-repeat;
 	color: black;
-	-webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
+    -webkit-background-size: 20vh; 
+    -moz-background-size: 20vh; 
+    -o-background-size: 20vh; 
     background-size: 100%; 
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
