@@ -65,7 +65,12 @@
         }
 
         if (settings.sticky === true) cssmenu.css('position', 'fixed');
+        
+      
 
+      });
+  };
+})(jQuery);
        
 (function($){
 $(document).ready(function(){
