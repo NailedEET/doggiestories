@@ -111,4 +111,70 @@
 #cssmenu > ul > li > a:hover::before {
   background: orange;
 }
-
+#cssmenu.small-screen {
+  width: 100%;
+}
+#cssmenu.small-screen > ul,
+#cssmenu.small-screen.align-center > ul {
+  width: 100%;
+  text-align: left;
+}
+#cssmenu.small-screen > ul > li,
+#cssmenu.small-screen.align-center {
+  float: none;
+  display: block;
+  border-top: 1px solid rgba(100, 100, 100, 0.1);
+}
+#cssmenu.small-screen > ul > li:hover > a,
+#cssmenu.small-screen > ul > li > a:hover {
+  color: #dff2fa;
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+  -ms-transform: none;
+}
+#cssmenu.small-screen > ul > li > a::before {
+  display: none;
+}
+#cssmenu.small-screen #menu-button {
+  display: block;
+  padding: 16px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #3db2e1;
+}
+#cssmenu.small-screen #menu-button:after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  display: block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  width: 22px;
+  height: 3px;
+}
+#cssmenu.small-screen #menu-button.menu-opened:after {
+  border-top: 2px solid #dff2fa;
+  border-bottom: 2px solid #dff2fa;
+}
+#cssmenu.small-screen #menu-button:before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 27px;
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #ffffff;
+}
+#cssmenu.small-screen #menu-button.menu-opened:before {
+  background: #dff2fa;
+}
