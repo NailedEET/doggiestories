@@ -93,8 +93,8 @@
   width: 100%;
   height: 100%;
   padding: 16px 20px;
-  color: yellow; /* color here */
-  background: purple; /* color here */
+  color: black; /* color here */
+  background: orange; /* color here */
   content: attr(data-title);
   -webkit-transition: background 0.3s;
   -moz-transition: background 0.3s;
