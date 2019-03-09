@@ -109,7 +109,7 @@
 }
 #cssmenu > ul > li:hover > a::before,
 #cssmenu > ul > li > a:hover::before {
-  background: purple;
+  background: orange;
 }
 #cssmenu.small-screen {
   width: 100%;
