@@ -66,33 +66,7 @@
 
         if (settings.sticky === true) cssmenu.css('position', 'fixed');
 
-        resizeFix = function() {
-          if ($(window).width() > settings.breakpoint) {
-            cssmenu.find('ul').show();
-            cssmenu.removeClass('small-screen');
-            if (settings.format === 'select') {
-              cssmenu.find('select').hide();
-            }
-            else {
-              cssmenu.find("#menu-button").removeClass("menu-opened");
-            }
-          }
-
-          if ($(window).width() <= settings.breakpoint && !cssmenu.hasClass("small-screen")) {
-            cssmenu.find('ul').hide().removeClass('open');
-            cssmenu.addClass('small-screen');
-            if (settings.format === 'select') {
-              cssmenu.find('select').show();
-            }
-          }
-        };
-        resizeFix();
-        return $(window).on('resize', resizeFix);
-
-      });
-  };
-})(jQuery);
-
+       
 (function($){
 $(document).ready(function(){
 
